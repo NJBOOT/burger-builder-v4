@@ -1,0 +1,30 @@
+.Order {
+  width: 80%;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Ingredient span {
+  text-transform: capitalize;
+  margin: 0 8px;
+  border: 1px solid #cccccc;
+  padding: 5px;
+}
+
+@media (max-width: 760px) {
+  .Ingredient {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Ingredient span {
+    margin: 8px 0;
+  }
+  .Order {
+    flex-direction: column;
+  }
+}
